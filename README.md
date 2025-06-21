@@ -1,99 +1,50 @@
-# 🚀 Project Name
+# 🚀 processo-seletivo-2025-Metta
 
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg) ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 
-> Powerful and scalable backend API built with modern technologies.
-
----
-
-## 📚 About
-
-This is a RESTful API designed to handle [brief project description], such as authentication, data management, and integration with third-party services.
+> Aplicação para detecção de pessoas em vídeos, com marcação de bounding boxes para identificação visual e quantificação por frame.
 
 ---
 
 ## 🧰 Tech Stack
-
-- ⚙️ Node.js & Express.js  
-- 📘 TypeScript  
-- 🗃️ MongoDB / PostgreSQL  
-- 🔐 JWT for Authentication  
-- 🧪 Jest & Supertest (for testing)  
-- 🐳 Docker & Docker Compose  
-- 📄 Swagger (for API docs)
-
----
-
-## 📂 Project Structure
-
-```bash
-📦 src
-├── config/
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── services/
-└── utils/
-```
----
-
-## 📬 Main Endpoints and Features
-
-### 🔐 AuthController
-
-| Method | Route         | Description             |
-|--------|---------------|-------------------------|
-| POST   | /api/login    | Authenticate user       |
-| POST   | /api/register | Register a new user     |
-| GET    | /api/profile  | Get logged-in user data |
-
-###  👤 UserController
-
-| Method | Route         | Description             |
-|--------|---------------|-------------------------|
-| GET    | /api/users    | Get all users           |
-| GET    | /api/users/:id| Get user by ID          |
-| PUT    | /api/users/:id| Update user             |
-| DELETE | /api/users/:id| Delete user             |
-
-###  📦 ProductController
-
-| Method | Route             | Description             |
-|--------|-------------------|-------------------------|
-| GET    | /api/products     | List all products       |
-| POST   | /api/products     | Create a new product    |
-| PUT    | /api/products/:id | Update a product        |
-| DELETE | /api/products/:id | Delete a product        |
+- 📙 JavaScript
+- ⚙️ Node.js | v20.19.2
+- 📂 path 
+- 📂 fs 
+- 📂 url / fileURLToPath 
+- 📦 @tensorflow-models/coco-ssd | v2.2.3
+- 📦 @tensorflow/tfjs | v4.22.0
+- 📦 canvas | v3.1.1 
+- 📦 fluent-ffmpeg | v2.1.3
+- 📦 sharp | v0.34.2
 
 ---
 
-## 🖥️ Running the Project
+## ⚠️ Configuração do FFmpeg no Windows
+1. Baixe o FFmpeg:
+   - Baixe o FFmpeg em https://ffmpeg.org/download.html
+   - Extraia o FFmpeg:
+   - Extraia o arquivo ZIP em uma pasta de fácil acesso (exemplo: C:\ffmpeg).
+   - Adicione o FFmpeg ao PATH
+   - Em Variáveis de Sistema, encontre a variável chamada Path, clique em Editar e adicione o seguinte caminho (ajuste de acordo com onde você extraiu):
+    ```bash
+      C:\ffmpeg\bin
+    ```
+
+---
+
+## 🖥️ Instruções para Rodar
 
 ### 🔧 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/Hugolelis/processo-seletivo-2025-Metta.git
+cd processo-seletivo-2025-Metta
 ```
 
 ### 📦 2. Install Dependencies
 
 ```bash
 npm install
-```
-
-### ⚙️ 3. Set Up Environment Variables (.env)
-
-```bash
-PORT=3000
-DATABASE_URL=mongodb://localhost:27017/your-db
-JWT_SECRET=your_jwt_secret
-```
-
-### ▶️ 4. Start the Server
-
-```bash
-npm start
 ```
