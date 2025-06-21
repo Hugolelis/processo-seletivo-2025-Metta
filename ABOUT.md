@@ -14,6 +14,44 @@ Aplicação backend para análise e processamento de vídeos, utilizando modelos
 ---
 
 ## 📌 Funções das técnologias no projeto
+- 📙 JavaScript
+#### Linguagem principal de desenvolvimento. Usada para escrever toda a lógica do projeto, desde leitura de arquivos até processamento de imagens e execução de modelos de IA.
+##
+
+- ⚙️ Node.js | v20.19.2
+#### Ambiente de execução JavaScript no servidor. Permite rodar o código JavaScript fora do navegador.
+##
+
+- 📂 path
+#### Módulo nativo do Node.js. Usado para manipular e resolver caminhos de arquivos e diretórios.
+##
+
+- 📂 fs
+#### File System (Sistema de Arquivos) do Node.js. Permite criar, ler, escrever e excluir arquivos e pastas
+##
+
+- 📂 url / fileURLToPath
+#### url: Trabalha com URLs. | fileURLToPath: Converte uma URL de arquivo (file://) para um caminho de arquivo tradicional no sistema (string com o path local).
+##
+
+- 📦 @tensorflow-models/coco-ssd | v2.2.3
+#### Modelo pré-treinado de IA para detecção de objetos.
+##
+
+- 📦 @tensorflow/tfjs | v4.22.0
+#### Biblioteca base para rodar TensorFlow em JavaScript. É o núcleo que permite executar o modelo coco-ssd dentro do Node.js.
+##
+
+- 📦 canvas | v3.1.1
+#### Permite abrir, manipular e desenhar em imagens dentro do Node.js. No projeto, é usado para desenhar as bounding boxes (caixas delimitadoras) e as legendas de identificação sobre os objetos detectados pela IA.
+##
+
+- 📦 fluent-ffmpeg | v2.1.3
+#### Usado para extrair frames de vídeos, converter formatos ou gerar um vídeo a partir de imagens processadas.
+##
+
+- 📦 sharp | v0.34.2
+#### Permite redimensionar, cortar, converter e salvar imagens de forma otimizada, sendo útil para preparar as imagens antes do processamento.
 
 ---
 
