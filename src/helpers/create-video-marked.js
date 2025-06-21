@@ -1,7 +1,7 @@
 import ffmpeg from 'fluent-ffmpeg';
 import path from 'path';
 
-export async function createVideoMarked(markedFramesDir, outputVideoPath, videoPath) {
+export async function createVideoMarked(markedFramesDir, outputVideoPath) {
     return new Promise((resolve, reject) => {
         ffmpeg()
         .input(path.join(markedFramesDir, 'frame-%03d.jpg')) 
