@@ -20,12 +20,12 @@ export class VideoProcessor {
         this.videoPath = videoPath
         this.cut = cut
 
-        this.framesDir = path.join(__dirname, '..', 'src', 'output', 'frames')
-        this.markedFramesDir = path.join(__dirname, '..', 'src', 'output', 'frames_marked')
-        this.videoDir = path.join(__dirname, '..', 'src', 'output', 'video_marked', 'video_marked.mp4')
+        this.framesDir = path.join(__dirname, '..', 'src', 'output_results', 'frames')
+        this.markedFramesDir = path.join(__dirname, '..', 'src', 'output_results', 'frames_marked')
+        this.videoDir = path.join(__dirname, '..', 'src', 'output_results', 'video_marked', 'video_marked.mp4')
 
-        this.alertsDir = path.join(__dirname, '..', 'src', 'output')
-        this.historyDir = path.join(__dirname, '..', 'src', 'output')
+        this.alertsDir = path.join(__dirname, '..', 'src', 'output_results')
+        this.historyDir = path.join(__dirname, '..', 'src', 'output_results')
 
         this.alerts = []
         this.history = []
