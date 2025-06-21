@@ -22,7 +22,7 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 
 ---
 
-## 📂 Project Structure
+## 📂 Estrutura do projeto
 
 ```bash
 📦 src
