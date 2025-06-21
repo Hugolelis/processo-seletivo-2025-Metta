@@ -18,7 +18,7 @@
 
 ---
 
-## 🖥️ Instruções para Rodar projeto
+## 🖥️ Instruções para Rodar
 
 ### 🔧 1. Clone the Repository
 
