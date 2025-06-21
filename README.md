@@ -9,12 +9,12 @@
 
 ## 🧰 Tech Stack
 - 📙 JavaScript
-- ⚙️ Node.js 
-- 📦 @tensorflow-models/coco-ssd — v2.2.3
-- 📦 @tensorflow/tfjs — v4.22.0
-- 📦 canvas — v3.1.1 
-- 📦 fluent-ffmpeg — v2.1.3
-- 📦 sharp — v0.34.2
+- ⚙️ Node.js | v20.19.2
+- 📦 @tensorflow-models/coco-ssd | v2.2.3
+- 📦 @tensorflow/tfjs | v4.22.0
+- 📦 canvas | v3.1.1 
+- 📦 fluent-ffmpeg | v2.1.3
+- 📦 sharp | v0.34.2
 
 ---
 
