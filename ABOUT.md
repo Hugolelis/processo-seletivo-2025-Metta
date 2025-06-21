@@ -18,7 +18,7 @@ Aplicação backend para análise e processamento de vídeos, utilizando modelos
 ---
 
 ## 📋 Planejamento e Estruturação no Notion
-Pode ser acessado em: https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4cea802581f1000c23031a54&source=copy_link
+https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4cea802581f1000c23031a54&source=copy_link
 
 ---
 
