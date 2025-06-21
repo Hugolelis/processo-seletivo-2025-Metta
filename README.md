@@ -10,6 +10,9 @@
 ## 🧰 Tech Stack
 - 📙 JavaScript
 - ⚙️ Node.js | v20.19.2
+- 📂 path 
+- 📂 fs 
+- 📂 url / fileURLToPath 
 - 📦 @tensorflow-models/coco-ssd | v2.2.3
 - 📦 @tensorflow/tfjs | v4.22.0
 - 📦 canvas | v3.1.1 
