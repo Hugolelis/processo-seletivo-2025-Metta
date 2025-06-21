@@ -100,10 +100,10 @@ export class VideoProcessor {
             const totalScore = peoplePredictions.reduce((acc, p) => acc + p.score, 0)
             const sucessMargin = peopleCount > 0 ? `${((totalScore / peopleCount) * 100).toFixed(2)}%` : 'N/A'
 
-            this.alerts.push({ file, peopleCount, sucessMargin })
+            this.alerts.push({ id: file, peopleCount, sucessMargin })
 
             if (peopleCount > this.cut) {
-                this.history.push({ file, peopleCount, sucessMargin })
+                this.history.push({ id: file, peopleCount, sucessMargin })
             }
 
             await this.saveMarkedFrame(canvas, file)
