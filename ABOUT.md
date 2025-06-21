@@ -7,9 +7,9 @@
 
 ---
 
-## 📚 About
+## 📚 Sobre
 
-This is a RESTful API designed to handle [brief project description], such as authentication, data management, and integration with third-party services.
+Aplicação backend para análise e processamento de vídeos, utilizando modelos de visão computacional para detecção precisa de pessoas. O sistema realiza extração de frames, marcação visual de objetos detectados com bounding boxes e geração de vídeos anotados para aplicações de monitoramento e análise.
 
 ---
 
