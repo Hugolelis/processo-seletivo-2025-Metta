@@ -18,6 +18,19 @@
 
 ---
 
+## ⚠️ Configuração do FFmpeg no Windows
+1. Baixe o FFmpeg:
+   - Baixe o FFmpeg em https://ffmpeg.org/download.html
+   - Extraia o FFmpeg:
+   - Extraia o arquivo ZIP em uma pasta de fácil acesso (exemplo: C:\ffmpeg).
+   - Adicione o FFmpeg ao PATH
+   - Em Variáveis de Sistema, encontre a variável chamada Path, clique em Editar e adicione o seguinte caminho (ajuste de acordo com onde você extraiu):
+    ```bash
+      C:\ffmpeg\bin
+    ```
+
+---
+
 ## 🖥️ Instruções para Rodar
 
 ### 🔧 1. Clone the Repository
