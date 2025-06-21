@@ -3,12 +3,13 @@
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg) ![Status](https://img.shields.io/badge/status-complete-brightgreen.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 
-> Aplicação para detecção e i.e. bounding boxes de pessoas em videos.
+> Aplicação para detecção de pessoas em vídeos, com marcação de bounding boxes para identificação visual e quantificação por frame.
 
 ---
 
 ## 🧰 Tech Stack
-- ⚙️ Node.js / Javascript
+- 📙 JavaScript
+- ⚙️ Node.js 
 - 📦 @tensorflow-models/coco-ssd — v2.2.3
 - 📦 @tensorflow/tfjs — v4.22.0
 - 📦 canvas — v3.1.1 
@@ -17,7 +18,7 @@
 
 ---
 
-## 🖥️ Running the Project
+## 🖥️ Instruções para Rodar projeto
 
 ### 🔧 1. Clone the Repository
 
