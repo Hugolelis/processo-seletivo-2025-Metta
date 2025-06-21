@@ -63,12 +63,28 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 ## 📂 Estrutura do projeto
 
 ```bash
-📦 src
-├── config/
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── services/
-└── utils/
+├── node_modules/                  # Dependências do projeto
+├── src/                           # Código-fonte principal
+│   ├── helpers/                   # Funções utilitárias
+│   │   ├── clear-output-directory.js        # Limpa as pastas de saída antes de uma nova execução
+│   │   ├── create-video-marked.js           # Gera um vídeo final com os frames marcados com as detecções da IA
+│   │   ├── extract-frames-async.js          # Extrai frames de vídeos de forma assíncrona para análise
+│   │   └── write-json.js                    # Função para salvar dados em arquivos JSON
+│   │
+│   └── output_results/            # Diretório onde ficam os resultados gerados
+│       ├── frames/                # Frames extraídos do vídeo original
+│       ├── frames_marked/         # Frames com as bounding boxes e rótulos desenhados
+│       ├── video_marked/          # Vídeo final gerado com as marcações da IA
+│       ├── alert.json             # array de objetos para todos os frames do vídeo. 
+│       └── history.json           # array de objetos para os frames onde a quantidade de pessoas é igual ou maior que um limiar de corte informado.
+│
+├── public/                        # Arquivos públicos
+│   └── main.js                    # Ponto de entrada do script
+│
+├── .gitignore                     # Arquivos e pastas ignorados pelo Git
+├── ABOUT.md                       # Informações adicionais sobre o projeto
+├── package-lock.json              # Lockfile das dependências
+├── package.json                   # Configuração do projeto Node.js
+└── README.md                      # Documentação principal do projeto
+
 ```
