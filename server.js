@@ -23,6 +23,10 @@ app.post('/process', upload.single('videoFile'), async(req, res) => {
     const cut = req.body.cut;
     const videoPath = req.file ? req.file.path : null;
 
+    if (!videoPath) {
+        return res.status(400).json({ success: false, error: 'Nenhum arquivo de vídeo foi enviado.' });
+    }
+
     try {
         const processor = new VideoProcessor(videoPath, cut);
         await processor.run();

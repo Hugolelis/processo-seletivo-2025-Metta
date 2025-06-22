@@ -2,7 +2,6 @@
 import * as cocoSsd from '@tensorflow-models/coco-ssd'
 import * as tf from '@tensorflow/tfjs'
 import { createCanvas, loadImage } from 'canvas'
-import sharp from 'sharp'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -41,24 +40,6 @@ export class VideoProcessor {
         await clearOutputDirectory(this.markedFramesDir)
     }
 
-    async preprocessImage(inputPath, outputPath) {
-        const processedImage = sharp(inputPath).resize(960, 540, { fit: 'inside' })
-        const metadata = await processedImage.metadata()
-
-        let width = metadata.width
-        let height = metadata.height
-        if (width % 2 !== 0) width -= 1
-        if (height % 2 !== 0) height -= 1
-
-        await processedImage
-        .resize(width, height)
-        .sharpen()
-        .modulate({ brightness: 1.15, contrast: 1.3, saturation: 1.2 })
-        .normalize()
-        .median(3)
-        .toFile(outputPath)
-    }
-
     drawPredictions(ctx, predictions) {
         ctx.strokeStyle = 'red'
         ctx.lineWidth = 4
@@ -66,11 +47,11 @@ export class VideoProcessor {
         ctx.fillStyle = 'red'
 
         predictions.forEach(prediction => {
-        if (prediction.class === 'person') {
-            const [x, y, width, height] = prediction.bbox
-            ctx.strokeRect(x, y, width, height)
-            ctx.fillText('Pessoa', x, y > 20 ? y - 5 : y + 20)
-        }
+            if (prediction.class === 'person') {
+                const [x, y, width, height] = prediction.bbox
+                ctx.strokeRect(x, y, width, height)
+                ctx.fillText('Pessoa', x, y > 20 ? y - 5 : y + 20)
+            }
         })
     }
 
@@ -80,11 +61,8 @@ export class VideoProcessor {
 
         for (const file of files) {
             const imgPath = path.join(this.framesDir, file)
-            const processedImgPath = path.join(this.framesDir, 'processed-' + file)
 
-            await this.preprocessImage(imgPath, processedImgPath)
-
-            const img = await loadImage(processedImgPath)
+            const img = await loadImage(imgPath)
             const canvas = createCanvas(img.width, img.height)
             const ctx = canvas.getContext('2d')
             ctx.drawImage(img, 0, 0)
@@ -107,7 +85,6 @@ export class VideoProcessor {
 
             await this.saveMarkedFrame(canvas, file)
             tensor.dispose()
-            fs.unlinkSync(processedImgPath)
         }
     }
 
@@ -117,8 +94,8 @@ export class VideoProcessor {
         const stream = canvas.createJPEGStream({ quality: 1.0, chromaSubsampling: false })
 
         await new Promise(resolve => {
-        stream.pipe(outStream)
-        outStream.on('finish', resolve)
+            stream.pipe(outStream)
+            outStream.on('finish', resolve)
         })
     }
 

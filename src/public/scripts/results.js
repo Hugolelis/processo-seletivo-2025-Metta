@@ -31,12 +31,15 @@ form.onsubmit = async function(e) {
         body: formData
     });
 
-    const data = await res.json();
+    try {
+        const data = await res.json();
 
-    if (data.success) {
-        resultDiv.innerHTML = renderResultsTable(data.result);
-    } else {
-        resultDiv.textContent = 'Erro: ' + data.error;
+        if (data.success) {
+            resultDiv.innerHTML = renderResultsTable(data.result);
+        } 
+
+    } catch(e) {
+        resultDiv.textContent = 'Erro: ' + e;
     }
 
 }
