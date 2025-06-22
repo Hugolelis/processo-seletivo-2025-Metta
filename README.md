@@ -48,3 +48,10 @@ cd processo-seletivo-2025-Metta
 ```bash
 npm install
 ```
+
+### ▶️ 3. Start the Server
+
+```bash
+npm start
+```
+
