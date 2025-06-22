@@ -34,6 +34,14 @@ Aplicação backend para análise e processamento de vídeos, utilizando modelos
 #### url: Trabalha com URLs. | fileURLToPath: Converte uma URL de arquivo (file://) para um caminho de arquivo tradicional no sistema (string com o path local).
 ##
 
+- 📦 express | v4.19.2  
+#### Framework web minimalista para Node.js. Usado para criar o servidor HTTP responsável por receber requisições, processar os vídeos enviados e devolver os resultados para o frontend.  
+##
+
+- 📦 multer | v1.4.5-lts.1  
+#### Middleware para manipulação de uploads de arquivos em formulários HTML. No projeto, é utilizado para receber o vídeo enviado pelo usuário através de um formulário multipart/form-data.  
+##
+
 - 📦 @tensorflow-models/coco-ssd | v2.2.3
 #### Modelo pré-treinado de IA para detecção de objetos.
 ##
