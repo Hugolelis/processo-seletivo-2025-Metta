@@ -13,6 +13,8 @@
 - 📂 path 
 - 📂 fs 
 - 📂 url / fileURLToPath 
+- 📦 express | v4.19.2
+- 📦 multer | v1.4.5-lts.1
 - 📦 @tensorflow-models/coco-ssd | v2.2.3
 - 📦 @tensorflow/tfjs | v4.22.0
 - 📦 canvas | v3.1.1 
