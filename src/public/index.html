@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Processar Vídeo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="scripts/file.js" defer></script>
+    <script src="scripts/results.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Processar Vídeo</h1>
+        <form id="videoForm">
+        <label>Selecione o vídeo:</label>
+        <div class="file-input-wrapper">
+            <label class="custom-file-label" for="videoFile">Escolher arquivo</label>
+            <input type="file" name="videoFile" id="videoFile" accept="video/*" required>
+            <button type="button" id="removeFileBtn">Remover</button>
+        </div>
+        <span class="selected-file-name" id="selectedFileName"></span>
+        <label>Limiar de pessoas:
+            <input type="number" name="cut" min="0" placeholder="digite um número (Opcional)">
+        </label>
+        <button type="submit">Enviar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html> 

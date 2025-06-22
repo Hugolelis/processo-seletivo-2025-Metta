@@ -1,0 +1,10 @@
+{
+  "watch": ["server.js", "src/main.js", "src/helpers"],
+  "ignore": [
+    "src/output_results/*",
+    "src/output_results/frames/*",
+    "src/output_results/frames_marked/*",
+    "src/output_results/video_marked/*",
+    "src/public/*"
+  ]
+} 

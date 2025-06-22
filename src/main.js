@@ -39,7 +39,6 @@ export class VideoProcessor {
 
         await clearOutputDirectory(this.framesDir)
         await clearOutputDirectory(this.markedFramesDir)
-        fs.mkdirSync(this.markedFramesDir, { recursive: true })
     }
 
     async preprocessImage(inputPath, outputPath) {
@@ -138,8 +137,3 @@ export class VideoProcessor {
         console.log('Outputs concluídos.')
     }
 }
-
-const videoPath = 'C:/Users/hugod/Downloads/people-walking.mp4'
-
-const processor = new VideoProcessor(videoPath, 2)
-await processor.run()

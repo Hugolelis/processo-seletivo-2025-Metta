@@ -8,7 +8,7 @@ export async function createVideoMarked(markedFramesDir, outputVideoPath) {
         .inputFPS(1)                                         
         .outputOptions(['-c:v', 'libx264', '-pix_fmt', 'yuv420p'])   
         .save(outputVideoPath)
-        .on('end', () => {
+        .on('end', async () => {
             console.log('Vídeo final criado em:', outputVideoPath);
             resolve();
         })
