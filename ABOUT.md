@@ -82,9 +82,32 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 │   └── main.js                    # Ponto de entrada do script
 │
 ├── .gitignore                     # Arquivos e pastas ignorados pelo Git
-├── ABOUT.md                       # Informações adicionais sobre o projeto
+├── ABOUT.md                       # Documentação principal do projeto
 ├── package-lock.json              # Lockfile das dependências
 ├── package.json                   # Configuração do projeto Node.js
-└── README.md                      # Documentação principal do projeto
+└── README.md                      # Documentação para rodar o projeto
 
 ```
+
+---
+
+## 🖼️ Imagens UI/UX
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b5857d55-cb85-4c10-9f69-c6a25451e49e" alt="Imagem 1" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/f247249e-1bda-4f14-8fd7-b72137174429" alt="Imagem 2" width="45%"/>
+</p>
+
+---
+
+## 📤 Outputs Gerados pelo Projeto
+
+#### 📄 alert.json 
+![Captura de tela 2025-06-22 171155](https://github.com/user-attachments/assets/8f04c975-595c-4e70-9a8d-299560a28126)
+
+#### 📄 history.json 
+![Captura de tela 2025-06-22 171227](https://github.com/user-attachments/assets/cf3a38a3-459e-4edf-b990-f9651dc1cbf8)
+
+#### ▶️ Video com bounding
+![Captura de tela 2025-06-22 171328](https://github.com/user-attachments/assets/ec790ba5-be44-4562-8e3b-c278758c5e30)
+
