@@ -100,7 +100,7 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 
 ---
 
-## 📤 Outputs Gerados pelo Projeto
+## 📤 Outputs gerados pelo Projeto
 
 #### 📄 alert.json 
 ![Captura de tela 2025-06-22 171155](https://github.com/user-attachments/assets/8f04c975-595c-4e70-9a8d-299560a28126)
