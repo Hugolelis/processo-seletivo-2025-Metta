@@ -60,6 +60,10 @@ Aplicação backend para análise e processamento de vídeos, utilizando modelos
 
 - 📦 sharp | v0.34.2
 #### Permite redimensionar, cortar, converter e salvar imagens de forma otimizada, sendo útil para preparar as imagens antes do processamento.
+## 
+
+- 📦 chart.js | v4.4.1
+#### Biblioteca para geração de gráficos. Utilizada para exibir visualmente a quantidade de pessoas detectadas por frame.
 
 ---
 
