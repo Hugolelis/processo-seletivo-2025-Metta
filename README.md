@@ -20,6 +20,7 @@
 - 📦 canvas | v3.1.1 
 - 📦 fluent-ffmpeg | v2.1.3
 - 📦 sharp | v0.34.2
+- 📦 chart.js | v4.4.1
 
 ---
 
