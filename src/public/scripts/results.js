@@ -51,23 +51,93 @@ function renderResultsTable(result) {
     if (result.videoUrl) {
         html += `<h2>Vídeo de Saída</h2><video src="${result.videoUrl}" controls style="width:100%;max-width:380px;margin-bottom:20px;"></video>`;
     }
-
-    if (result.history && result.history.length && cut.length >= 1) {
-        html += '<h2>Frames com limiar</h2>';
-        html += '<table><thead><tr><th>Frame</th><th>Pessoas</th><th>Margem de Sucesso</th></tr></thead><tbody>';
-        result.history.forEach(item => {
-        html += `<tr><td>${item.id}</td><td>${item.peopleCount}</td><td>${item.sucessMargin}</td></tr>`;
-        });
-        html += '</tbody></table>';
-    } 
-
+    
     if (result.alerts && result.alerts.length && cut.length == 0) {
-        html += '<h2>Todos os Frames</h2>';
-        html += '<table><thead><tr><th>Frame</th><th>Pessoas</th><th>Margem de Sucesso</th></tr></thead><tbody>';
-        result.alerts.forEach(item => {
-        html += `<tr><td>${item.id}</td><td>${item.peopleCount}</td><td>${item.sucessMargin}</td></tr>`;
-        });
-        html += '</tbody></table>';
+        html += `
+            <h2>Gráfico de Pessoas por Frame</h2>
+            <canvas id="peopleChart" width="600" height="300"></canvas>
+        `;
+
+        setTimeout(() => {
+            const ctx = document.getElementById('peopleChart').getContext('2d');
+            const labels = result.alerts.map((item, index) => `${item.id}`);
+            const peopleCounts = result.alerts.map(item => item.peopleCount);
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Pessoas por Frame',
+                        data: peopleCounts,
+                        borderColor: 'blue',
+                        backgroundColor: 'rgba(0, 0, 255, 0.3)',
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Frames'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Quantidade de Pessoas'
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }, 100);
+    } else {
+        html += `
+            <h2>Gráfico de Pessoas por Frame com limiar</h2>
+            <canvas id="peopleChart" width="600" height="300"></canvas>
+        `;
+
+        setTimeout(() => {
+            const ctx = document.getElementById('peopleChart').getContext('2d');
+            const labels = result.history.map((item, index) => `${item.id}`);
+            const peopleCounts = result.history.map(item => item.peopleCount);
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Pessoas por Frame',
+                        data: peopleCounts,
+                        borderColor: 'blue',
+                        backgroundColor: 'rgba(0, 0, 255, 0.3)',
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Frames'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Quantidade de Pessoas'
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }, 100);
     }
 
     submitBtn.disabled = false;

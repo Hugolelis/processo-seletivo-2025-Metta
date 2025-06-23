@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 700px;
   margin: 20px auto;
   background: #fff;
   padding: 24px;
@@ -65,6 +65,13 @@ body {
   background: #0056b3;
 }
 
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
 #removeFileBtn {
   padding: 10px 16px;
   background: #dc3545;
@@ -112,31 +119,3 @@ body {
   min-height: 40px;
 }
 
-.container #result table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 16px;
-}
-
-.container #result table th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-}
-
-.container #result table th {
-  background: #f0f0f0;
-}
-
-.container #result table h2 {
-  margin-top: 32px;
-  font-size: 1.2em;
-  color: #333;
-}
-
-.file-input-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 6px;
-}
