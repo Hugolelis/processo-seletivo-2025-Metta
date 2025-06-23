@@ -72,7 +72,16 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 
 ---
 
+## 📬 Main Endpoint
+
+| Método | Rota       | Descrição                                 |
+|--------|------------|-------------------------------------------|
+| POST   | `/process` | Inicia e executa todas as etapas do processo de detecção |
+
+
 ## 📂 Estrutura do projeto
+
+---
 
 ```bash
 ├── node_modules/                  # Dependências do projeto
