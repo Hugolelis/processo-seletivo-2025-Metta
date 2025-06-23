@@ -106,8 +106,11 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 ## 🖼️ Imagens UI/UX
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b5857d55-cb85-4c10-9f69-c6a25451e49e" alt="Imagem 1" width="45%"/>
-  <img src="https://github.com/user-attachments/assets/f247249e-1bda-4f14-8fd7-b72137174429" alt="Imagem 2" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/cb8fb784-b18a-42f6-aca3-2d3e8da5954d" alt="Captura de tela 4" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/a8d8d535-45e1-4e5c-bf81-5a2554dddb50" alt="Captura de tela 3" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/861c75ea-25a5-4148-b2c8-130f66f98801" alt="Captura de tela 7" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/41edf02e-119a-4d66-9fc0-a20a67df4e7a" alt="Captura de tela 6" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/9d18f2fe-73b2-4417-a9bb-f38b90a49df9" alt="Captura de tela 2" width="45%"/>
 </p>
 
 ---
