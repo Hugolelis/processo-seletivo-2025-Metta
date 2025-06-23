@@ -91,7 +91,12 @@ https://sand-teller-0b6.notion.site/2176eeaa4cea808a99d9ffc7b59fd55c?v=2176eeaa4
 │       └── history.json           # array de objetos para os frames onde a quantidade de pessoas é igual ou maior que um limiar de corte informado.
 │
 ├── public/                        # Arquivos públicos
+│   ├── css/                       # Estilo do frontend
+│   ├── scripts/                   # Lógica relaciona ao frontend
+│   ├── index.html                 # Html do frontend                    
 │   └── main.js                    # Ponto de entrada do script
+│                   
+├── uploads/                       # Arquivo carregado pelo frontend
 │
 ├── .gitignore                     # Arquivos e pastas ignorados pelo Git
 ├── ABOUT.md                       # Documentação principal do projeto
